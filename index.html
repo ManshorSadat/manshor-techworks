@@ -8,30 +8,81 @@
 </head>
 <body>
     <header>
-        <h1>Manshor Techworks</h1>
-        <p>Reliable Tech Setup & Support in North Highlands and Sacramento</p>
+        <div class="header-container">
+            <h1>Manshor Techworks</h1>
+            <nav>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="btn-primary">Get Help Now</a>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section id="services">
-            <h2>How I Can Help</h2>
-            <ul>
-                <li><strong>Wi-Fi & Network Setup:</strong> Fast, reliable connections for your whole home.</li>
-                <li><strong>Smart Camera Installation:</strong> Secure configuration for your peace of mind.</li>
-                <li><strong>Computer & Device Setup:</strong> PC building, data transfers, and getting your new tech ready to use.</li>
-                <li><strong>Virus Removal:</strong> Cleaning up your system so it runs like new.</li>
-            </ul>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Tech Setup & Support Made Simple</h2>
+                <p>Friendly, reliable help for your home and small business in North Highlands and the greater Sacramento area.</p>
+                <a href="tel:3203308985" class="btn-primary">Call (320) 330-8985</a>
+            </div>
+            <div class="hero-image-placeholder">
+                <p>[Your Picture Will Go Here]</p>
+            </div>
         </section>
 
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Need help with your tech? Let's get it sorted out.</p>
-            <a href="mailto:hello@manshortechworks.com">Email Me</a>
+        <section id="services" class="services">
+            <h2>How I Can Help</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <h3>Wi-Fi & Networks</h3>
+                    <p>Dead zones? Slow speeds? I will set up your routers and mesh networks so your internet is fast and reliable everywhere in your house.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Smart Cameras</h3>
+                    <p>Installation and configuration of security cameras, doorbells, and smart home devices directly to your phone.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Computers & Hardware</h3>
+                    <p>From building custom PCs and upgrading hardware to transferring your data to a brand new laptop safely.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Troubleshooting</h3>
+                    <p>Virus removal, software configuration, and fixing devices that just won't cooperate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Manshor Techworks</h2>
+            <p>I believe technology should make your life easier, not more stressful. With a strong background in computer science, hardware components, and hands-on troubleshooting, I started Manshor Techworks to provide my neighbors with clear, honest, and effective tech support.</p>
+            <p>Whether you need a complex PC build, a simple software fix, or just want your printer to finally connect to the Wi-Fi, I am here to help get it done right.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Let's Get Your Tech Sorted</h2>
+            <p>Reach out directly or send a message below.</p>
+            <div class="contact-info">
+                <p><strong>Phone:</strong> <a href="tel:3203308985">(320) 330-8985</a></p>
+                <p><strong>Email:</strong> <a href="mailto:manshorsadat@outlook.com">manshorsadat@outlook.com</a></p>
+            </div>
+
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">How can I help you?</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Manshor Techworks</p>
+        <p>&copy; 2026 Manshor Techworks. Serving North Highlands & Sacramento.</p>
     </footer>
 </body>
 </html>
