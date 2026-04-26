@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manshor Techworks | Sacramento Tech Services</title>
+    <meta name="description" content="Friendly, reliable tech support, Wi-Fi setup, computer building, and smart camera installation in the Sacramento area. Fast service to your door.">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,6 +13,7 @@
             <h1>Manshor Techworks</h1>
             <nav>
                 <a href="#services" class="nav-link">Services</a>
+                <a href="#process" class="nav-link">How It Works</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#contact" class="btn-primary">Get Help Now</a>
             </nav>
@@ -25,7 +27,7 @@
                 <p>Friendly, reliable help for your home and small business in North Highlands and the greater Sacramento area.</p>
                 <a href="tel:3203308985" class="btn-primary">Call (320) 330-8985</a>
             </div>
-           <img src="hero-image.jpg" alt="Manshor Techworks" class="hero-image">
+            <img src="hero-image.jpg" alt="Manshor Techworks" class="hero-image">
         </section>
 
         <section id="services" class="services">
@@ -33,19 +35,40 @@
             <div class="service-grid">
                 <div class="service-card">
                     <h3>Wi-Fi & Networks</h3>
-                    <p>Dead zones? Slow speeds? I will set up your routers and mesh networks so your internet is fast and reliable everywhere in your house.</p>
+                    <p>Dead zones? Slow speeds? I will set up your routers and mesh networks so your internet is fast and reliable everywhere in your house. Perfect for streaming and working from home.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Smart Cameras</h3>
-                    <p>Installation and configuration of security cameras, doorbells, and smart home devices directly to your phone.</p>
+                    <h3>Smart Cameras & Home</h3>
+                    <p>Installation and configuration of security cameras, Ring doorbells, and smart home devices directly to your phone so you can monitor your home securely.</p>
                 </div>
                 <div class="service-card">
                     <h3>Computers & Hardware</h3>
-                    <p>From building custom PCs and upgrading hardware to transferring your data to a brand new laptop safely.</p>
+                    <p>From building custom high-performance PCs and upgrading hardware to transferring your data safely to a brand new laptop.</p>
                 </div>
                 <div class="service-card">
-                    <h3>Troubleshooting</h3>
-                    <p>Virus removal, software configuration, and fixing devices that just won't cooperate.</p>
+                    <h3>Troubleshooting & Repair</h3>
+                    <p>Virus removal, software configuration, fixing bluetooth issues, and getting devices that just won't cooperate back online.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="process" class="process-section">
+            <h2>How It Works</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Reach Out</h3>
+                    <p>Fill out the form below or give me a call. Tell me what tech issue is driving you crazy or what new devices you need set up.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Get a Clear Plan</h3>
+                    <p>I will give you a straightforward assessment and an honest price. No confusing jargon, just simple solutions.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>Tech Sorted</h3>
+                    <p>I come directly to you, fix the problem, set up your hardware, and ensure you know exactly how to use it before I leave.</p>
                 </div>
             </div>
         </section>
@@ -58,23 +81,48 @@
 
         <section id="contact" class="contact">
             <h2>Let's Get Your Tech Sorted</h2>
-            <p>Reach out directly or send a message below.</p>
+            <p>Fill out the form below with your callback number and what you need help with, and I will reach out shortly.</p>
+            
             <div class="contact-info">
                 <p><strong>Phone:</strong> <a href="tel:3203308985">(320) 330-8985</a></p>
                 <p><strong>Email:</strong> <a href="mailto:manshorsadat@outlook.com">manshorsadat@outlook.com</a></p>
             </div>
 
             <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="contact-form">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
+                
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                </div>
 
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                </div>
 
-                <label for="message">How can I help you?</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="form-group">
+                    <label for="phone">Best Callback Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+                </div>
 
-                <button type="submit" class="btn-primary">Send Message</button>
+                <div class="form-group">
+                    <label for="service_type">What do you need help with?</label>
+                    <select id="service_type" name="service_type" required>
+                        <option value="">-- Select an Option --</option>
+                        <option value="WiFi / Networking">Wi-Fi & Networking</option>
+                        <option value="Cameras / Smart Home">Cameras & Smart Home</option>
+                        <option value="Computer Setup / Build">Computer Setup & PC Building</option>
+                        <option value="Virus / Troubleshooting">Virus Removal & Troubleshooting</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Please provide a few details about the issue:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="e.g. I need 3 Ring cameras installed, or my PC won't turn on..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Request Help</button>
             </form>
         </section>
     </main>
