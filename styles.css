@@ -203,6 +203,69 @@ h2::after {
     box-shadow: 0 4px 10px rgba(188, 108, 37, 0.3);
 }
 
+/* Pricing Section */
+.pricing {
+    background: var(--card-bg);
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+}
+
+.pricing-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    color: var(--text-main);
+}
+
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.price-card {
+    background: #faf9f7;
+    padding: 2rem;
+    border-radius: 4px;
+    text-align: center;
+    border: 1px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.price-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.price-card h3 {
+    font-size: 1.3rem;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 1.8rem;
+    color: var(--accent);
+    font-weight: 700;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 1rem;
+}
+
+.pricing-disclaimer {
+    background-color: #f6f4f0;
+    padding: 1.5rem 2rem;
+    border-radius: 4px;
+    border-left: 4px solid var(--accent);
+    font-size: 1.05rem;
+    color: var(--text-dark);
+    margin: 0 auto;
+    max-width: 850px;
+}
+
 /* About Section */
 .about {
     background: var(--card-bg);
@@ -303,6 +366,6 @@ footer {
     
     .process-steps { flex-direction: column; }
     
-    .about, .contact { padding: 2rem 1.5rem; }
+    .pricing, .about, .contact { padding: 2rem 1.5rem; }
     h2 { font-size: 2rem; }
 }
