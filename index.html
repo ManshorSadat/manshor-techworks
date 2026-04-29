@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manshor Techworks | Sacramento & Roseville Tech Services</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    
     <script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+    
     <meta name="description" content="Friendly, reliable tech support in North Highlands, Roseville, Folsom, and within 20 miles of Sacramento. Affordable Wi-Fi, camera, printer, and PC setups.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -122,7 +124,7 @@
 
         <section id="contact" class="contact">
             <h2>Let's Get Your Tech Sorted</h2>
-            <p>Fill out the form below with your callback number and what you need help with, and I will reach out shortly.</p>
+            <p>Fill out the form below with your details, and I will reach out shortly to get you on the schedule.</p>
             
             <div class="contact-info">
                 <p><strong>Phone:</strong> <a href="tel:3203308985">(320) 330-8985</a></p>
@@ -132,19 +134,26 @@
             <form action="https://formspree.io/f/xwvajpvo" method="POST" class="contact-form">
                 <input type="hidden" name="_next" value="https://manshortechworks.it.com">
                 
-                <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="phone">Best Callback Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" name="email" placeholder="john@example.com" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Best Callback Number</label>
-                    <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555" required>
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="location">City or ZIP Code</label>
+                        <input type="text" id="location" name="location" placeholder="e.g. Roseville or 95678" required>
+                    </div>
                 </div>
 
                 <div class="form-group">
@@ -158,6 +167,24 @@
                         <option value="Virus / Troubleshooting">Virus Removal & Troubleshooting</option>
                         <option value="Other">Other</option>
                     </select>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group half-width">
+                        <label for="support_preference">Preferred Support Method</label>
+                        <select id="support_preference" name="support_preference" required>
+                            <option value="In-Home Service (Sacramento Area)">In-Home Service (Sacramento Area)</option>
+                            <option value="Remote / Online Support">Remote / Online Support</option>
+                        </select>
+                    </div>
+                    <div class="form-group half-width">
+                        <label for="urgency">How urgent is this?</label>
+                        <select id="urgency" name="urgency" required>
+                            <option value="Standard (Within a few days)">Standard (Within a few days)</option>
+                            <option value="Urgent (ASAP / Today)">Urgent (ASAP / Today)</option>
+                            <option value="Flexible (No rush)">Flexible (No rush)</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div class="form-group">
